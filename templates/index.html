@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Killingworth History</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #5B6EE1, #9D45D8);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      padding: 40px;
+      max-width: 540px;
+      width: 90%;
+      text-align: center;
+    }
+    .logo img {
+      max-width: 120px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      color: #4e54c8;
+      margin-top: 0;
+    }
+    p.description {
+      margin: 15px 0 25px;
+      color: #444;
+    }
+    .links a {
+      display: inline-block;
+      margin: 5px 10px;
+      padding: 10px 15px;
+      font-size: 16px;
+      color: #4e54c8;
+      text-decoration: none;
+      border-radius: 8px;
+      border: 2px solid #4e54c8;
+      transition: background 0.2s, color 0.2s;
+    }
+    .links a:hover {
+      background: #4e54c8;
+      color: white;
+    }
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">
+      <!-- Update the src to your logo file path -->
+      <img src="/static/KHS_logo.png" alt="Killingworth Historical Society Logo">
+    </div>
+    <h1>Killingworth History</h1>
+    <p class="description">Explore historical sites around town.</p>
+    <div class="links">
+      <a href="#"><span role="img" aria-label="QR code">📷</span> Scan QR Code</a>
+      <a href="/categories"><span role="img" aria-label="location pin">📍</span> View Locations</a>
+      <a href="#"><span role="img" aria-label="self-guided tours">🚶‍♂️</span> Self-Guided Tours</a>
+    </div>
+    <p class="footer">Presented by the Killingworth Historical Society</p>
+  </div>
+</body>
+</html>
+

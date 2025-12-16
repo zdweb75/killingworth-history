@@ -1,0 +1,10 @@
+{
+  "blackrock": {
+    "title": "Black Rock Schoolhouse",
+    "category": "schoolhouses",
+    "description": "A preserved example of an early 19th‑century school.",
+    "images": ["blackrock-exterior.jpg"],
+    "lat": 41.36748027074819,
+    "lng": -72.56529102458987
+  }
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KHS Location</title>
+  <style>
+    /* Reset */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.5;
+      background: #f8f8f8;
+      padding: 20px;
+    }
+
+    /* Logo */
+    .logo {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .logo img {
+      max-height: 60px;
+    }
+
+    /* Category bar — reuse with different colours per category */
+    .category-bar {
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.2rem;
+      padding: 12px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    /* Sample category colours (add more as needed) */
+    .category-schoolhouses { background-color: #6666cc; }
+    .category-gravestones { background-color: #708090; }
+    .category-homes       { background-color: #8f6a5b; }
+    .category-artifacts   { background-color: #49796b; }
+
+    /* Location title */
+    .location-title {
+      text-align: center;
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+    }
+
+    /* Photos section */
+    .photos {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .photos img {
+      flex: 1 1 calc(50% - 10px);
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    /* Description */
+    .description {
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* Map */
+    .map {
+      margin-bottom: 20px;
+    }
+    .map iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 8px;
+    }
+
+    /* Back link */
+    .back-link {
+      display: block;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #0066cc;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- KHS logo: replace src with your logo file -->
+  <div class="logo">
+    <img src="/static/KHS_logo.png" alt="KHS Logo" />
+  </div>
+
+
+  <!-- Category bar: apply a class for the category you’re showing -->
+  <div class="category-bar category-schoolhouses">
+    Schoolhouses
+  </div>
+
+  <h1 class="location-title">Black Rock Schoolhouse</h1>
+
+  <!-- Photos: replace paths with your images -->
+  <div class="photos">
+    <img src="/static/Black Rock Schoolhouse.jpg" alt="Image of Black Rock Schoolhouse" />
+    <!--
+    <img src="/static/Black Rock Schoolhouse Sign Install.jpg" alt="Black Rock Schoolhouse Sign Installation" />
+    -->
+  </div>
+  
+  <!-- Description: write up the history of this location here -->
+  <div class="description">
+    <p>
+      Writeup on Black Rock Schoolhouse goes here. You can tell visitors about its history,
+      architecture, and interesting stories. Break the text into short paragraphs to keep it readable.
+    </p>
+  </div>
+
+  <!-- Google map: optional — embed with your coordinates and API key -->
+  <div class="map">
+    <iframe
+      src="https://maps.google.com/maps?q=41.36748027074819,-72.56529102458987&hl=en&z=17&output=embed"
+      allowfullscreen
+      width="100%"
+      height="300"
+      frameborder="0">
+    </iframe>
+  </div>
+
+
+  <a href="/" class="back-link">&larr; Back to Home</a>
+</body>
+</html>
+
